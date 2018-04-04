@@ -7,7 +7,9 @@ RUN apt-get install -y libudev-dev libusb-1.0-0-dev libncurses5-dev
             
 RUN git clone https://github.com/ckolivas/cgminer.git
 
-RUN cd cgminer && \
-    ./autogen.sh && \
-    ./configure && \
-    make install
+RUN cd cgminer && ./autogen.sh
+
+#RUN cd cgminer && \
+#    ./autogen.sh && \
+#    ./configure --help && \
+#    ./configure --enable-cpumining && make && install

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t marcomontel/rpi-cgminer .
+docker build --no-cache -t marcomontel/rpi-cgminer .
